@@ -1,0 +1,13 @@
+services:
+  datahub:
+    build:
+      context: .
+    image: georchestra/gnui:2
+    environment:
+      ASSETS_DIRECTORY_OVERRIDE: /etc/georchestra/datahub/assets
+      CONFIG_DIRECTORY_OVERRIDE: /etc/georchestra/datahub/conf
+      CUSTOM_SCRIPTS_DIRECTORY: /etc/georchestra/datahub/scripts
+    volumes:
+      - ./config:/etc/georchestra
+    ports:
+      - "8082:80"
