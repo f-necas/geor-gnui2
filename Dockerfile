@@ -1,4 +1,4 @@
-FROM geonetwork/geonetwork-ui-datahub:2.5.0
+FROM geonetwork/geonetwork-ui-datahub:2.4.0
 
 COPY docker-entrypoint.d/header.sh /tmp/header.sh
 

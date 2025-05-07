@@ -11,3 +11,12 @@ services:
       - ./config:/etc/georchestra
     ports:
       - "8082:80"
+
+  console:
+    image: georchestra/console:24.0.2
+    volumes:
+      - ./config:/etc/georchestra
+    environment:
+      - JAVA_OPTIONS=-Dorg.eclipse.jetty.annotations.AnnotationParser.LEVEL=OFF
+      - XMS=256M
+      - XMX=1G
