@@ -8,7 +8,8 @@
       "matchDatasources": ["maven"],
       "registryUrls": [
         "https://repo.maven.apache.org/maven2/",
-        "https://artifactory.georchestra.org/artifactory/georchestra/"
+        "https://artifactory.georchestra.org/artifactory/georchestra/",
+        "https://repo.osgeo.org/repository/release/"
       ]
     },
     {
