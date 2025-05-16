@@ -13,7 +13,7 @@ services:
       - "8082:80"
 
   console:
-    image: georchestra/console:24.0.2
+    image: georchestra/console:24.0.11
     volumes:
       - ./config:/etc/georchestra
     environment:
