@@ -1,0 +1,21 @@
+name: CI
+
+on:
+  push:
+
+jobs:
+  backend-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Getting image tag
+        if: github.repository == 'georchestra/maelstro' && github.actor != 'dependabot[bot]'
+        id: version
+        run: echo "{VERSION}={$(echo $GITHUB_REF | cut -d / -f 3)}" >> $GITHUB_OUTPUT
+
+      - name: check
+        run: ${{ steps.version.outputs.VERSION }}
+
