@@ -13,7 +13,7 @@ jobs:
 
       - name: Getting image tag
         id: version
-        run: echo "{VERSION}={$(echo $GITHUB_REF | cut -d / -f 3)}" >> $GITHUB_OUTPUT
+        run: echo "VERSION=$(echo $GITHUB_REF | cut -d / -f 3)" >> $GITHUB_OUTPUT
 
       - name: check
         run: echo ${{ steps.version.outputs.VERSION }}
