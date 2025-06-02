@@ -184,26 +184,3 @@ external_viewer_open_new_tab = true
 # }
 # """
 
-### TRANSLATIONS
-
-# To override translations in a specific language, use a 'translations.xx' section where 'xx' is a language code.
-# Language codes are expressed in ISO 639-1 codes, see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-# Example:
-#
-# [translations.en]
-# results.sortBy.dateStamp = "Last time someone changed something"
-# [translations.fr]
-# results.sortBy.dateStamp = "Dernière fois que quelqu'un a modifié quelque chose"
-#
-# Note:
-#   translation keys ending with ".html" _can_ contain HTML markup, including inline CSS:
-#     catalog.welcome.html = """
-#     Welcome to <span class="text-primary">Organization</span>'s<br>
-#     wonderful <span style="font-size: 1.2em;">data catalogue</span>
-#     """
-[translations.en]
-datahub.header.title.html = '<div class="text-white">Discover all the data <br> of your platform</div>'
-
-[translations.fr]
-datahub.header.title.html = '<div class="text-white">Toutes les données <br> de votre plateforme</div>'
-results.records.hits.found = '{hits, plural, =0{Aucune correspondance.} one{1 donnée trouvée.} other{{hits} données trouvées.}}'
