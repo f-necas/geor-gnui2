@@ -72,7 +72,7 @@
       <dependency>
         <groupId>org.georchestra</groupId>
         <artifactId>security-proxy-spring-integration</artifactId>
-        <version>24.0.1</version>
+        <version>24.0.11</version>
       </dependency>
       <dependency>
         <groupId>org.geoserver.community</groupId>
@@ -355,7 +355,7 @@
     <dependency>
       <groupId>org.georchestra</groupId>
       <artifactId>security-proxy-spring-integration</artifactId>
-      <version>24.0.1</version>
+      <version>24.0.11</version>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
